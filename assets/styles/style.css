@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+header{
+    height: 40px;
+    padding-top: 6px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    height: 200p;
+    top: 0;
+    position: sticky;
+    background-color: white;
+    bottom: 0;
+    /* background-color: #EDF7FA; */
+}
+
+main{
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #03045E;
+}
+
+main, nav{
+    max-width: 968px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.nav_name, nav .nav{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+nav .nav li{
+    display: inline;
+    list-style-type: none;
+    margin-right: 25px;
+}
+
+nav .nav a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #23304C;
+}
+
+.btn_dropdown{
+    width: 30px;
+    border: none;
+    text-decoration: none;
+    background-color: white;
+    display: none;
+    margin-right: 15px;   
+}
+
+.btn_dropdown img{
+    width: 100%;
+}
+
+.dp{
+    display: none;
+}
+
+.home{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.profile_img{
+    width: 150px;
+    height: 150px;
+
+}
+
+.home p{
+    margin-top: 10px;
+}
+
+.home ul{
+    margin-top: 10px;
+}
+.home ul li{
+    display:inline;
+    list-style-type: none;
+    margin-right: 5px;
+}
+
+.home ul li img{
+    width: 30px;
+}
+
+article{
+    margin-top: 15px;
+    padding: 15px;
+}
+
+article h2{
+    margin-bottom: 10px;
+}
+aside{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+aside .aboutme_img img{
+    width: 130px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+aside .aboutme_img{
+    flex: 0 0 25%;
+    width: 25%;
+}
+
+aside .aboutme_img p{
+    text-align: center;
+
+}
+
+aside .text_aboutme{
+    flex: 0 0 75%;
+    max-width: 75%;
+    padding: 15px;
+}
+
+.text_aboutme p{
+    text-align: justify;
+}
+
+.content_study_background{
+    display: flex;
+    justify-content: center;
+}
+
+.content_study_background img{
+    width: 200px;
+    height: 200px;
+}
+
+.smansa, .delasalle{
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    width: 250px;
+}
+
+.smansa{
+    margin-right: 20px;
+}
+
+.delasalle{
+    margin-left: 20px;
+}
+
+.my_skills, .about_me{
+    background-color: #CAF0F8;
+
+}
+
+.my_skills{
+    width: 100%;
+}
+
+.content_skills{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.skills{
+    width: 80%;
+    height: 7px;
+    background-color: red;
+    display: flex;
+}
+
+.sub_skills{
+    width: 70%;
+    height: 100%;
+    background-color: #03045E;
+}
+
+.skills p{
+    margin-top: 5px;
+    font-size: 10px;
+    font-weight: bold;
+}
+footer{
+    height: 40px;
+    margin-top: 15px;
+    padding-top: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+footer p{
+    text-align: center;
+    font-weight: 500;
+}
+
+.html, .css, .js, .java, .python, .sql{
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background-color: white;
+}
+
+@media screen and ( max-width:660px){
+    nav a{
+        font-size: 15px;
+        
+    }
+
+    article h2{
+        text-align: center;
+     }
+
+    .smansa, .delasalle{
+        padding-bottom: 10px;
+    }
+}
+@media screen and (max-width: 600px) {
+    nav a{
+        font-size: 14px;
+        
+    }
+    aside,.content_study_background{
+        display: block;
+    }
+
+    .aboutme_img, .text_aboutme, .smansa, .delasalle{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    aside .aboutme_img{
+        width: 100%;
+    }
+
+    
+    .smansa{
+        margin-bottom: 15px;
+    }
+
+    .content_study_background > *{
+        width: 65%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+}
+
+
+@media screen and (max-width: 580px) {
+    nav{
+        display: block;
+    }
+
+    nav .nav{
+        display: none;
+    }
+
+    .nav_name{
+        margin-top: 0;
+        position: absolute;
+        z-index: 2;
+    }
+
+    .button{
+        width: 100%;
+        height: max-content;
+        
+    }
+    .btn_dropdown{
+        display: inline-block;
+        margin-left: 100px;
+        cursor: pointer;   
+    }
+
+    .dropdown{
+        width: 100%;
+        display: none;
+        font-weight: bold;
+        background-color: #EDF7FA;
+        padding: 5px;
+    }
+
+    .dp{
+        display: block;
+        z-index: 1;
+        float: right;
+    }
+
+
+    .dropdown li a{
+        text-decoration: none;
+        color: #23304C;
+    }
+
+    .dropdown li{
+        list-style-type: none;
+        margin-top: 5px;
+    }
+}

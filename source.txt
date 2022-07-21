@@ -1,0 +1,7 @@
+Referensi :
+
+
+Warna : https://colorhunt.co/palette/03045e00b4d890e0efcaf0f8
+Dropdown : https://www.geeksforgeeks.org/how-to-create-dropdown-list-using-javascript/
+Gambar (selain profil, sekolah dan universitas) : Plugin figma Iconify
+
